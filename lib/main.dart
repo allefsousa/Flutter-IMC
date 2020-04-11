@@ -6,9 +6,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      theme: ThemeData.dark().copyWith(
+        primaryColor: Color(0xff0a0e21),
+        scaffoldBackgroundColor: Color(0xff0a0e21),
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -36,7 +36,10 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Text("Body Text"),
-      )
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add), onPressed: () {},
+      ),
     );
   }
 }
