@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+const activeCardColor = Color(0xFF1D1E33);
 class InputPage extends StatefulWidget {
   @override
   _InputPageState createState() => _InputPageState();
@@ -50,7 +51,8 @@ class ReusableCard extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(15.0),
       decoration: BoxDecoration(
-          color:colour, borderRadius: BorderRadius.circular(10.0)),
+          color:colour,
+          borderRadius: BorderRadius.circular(10.0)),
     );
   }
 }
